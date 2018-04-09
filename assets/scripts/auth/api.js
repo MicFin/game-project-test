@@ -1,8 +1,8 @@
-
+const config =('./../config.js')
 const signUp = function(data){
 
   return $.ajax({
-    url: "https://wdi-library-api.herokuapp.com/sign-up",
+    url: config.apiUrl + "sign-up",
     method: "POST",
     headers: {
       contentType: 'application/json'
